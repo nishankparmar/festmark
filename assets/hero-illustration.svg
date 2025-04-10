@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Person -->
+    <path d="M200 150 C 180 150, 165 165, 165 185 L 165 215 C 165 235, 180 250, 200 250 C 220 250, 235 235, 235 215 L 235 185 C 235 165, 220 150, 200 150" fill="#4B5563"/>
+    <!-- Suitcase -->
+    <rect x="180" y="260" width="40" height="60" rx="5" fill="#FF4500"/>
+    <rect x="190" y="250" width="20" height="10" rx="2" fill="#FF4500"/>
+    <!-- Wheels -->
+    <circle cx="185" cy="315" r="5" fill="#1F2937"/>
+    <circle cx="215" cy="315" r="5" fill="#1F2937"/>
+</svg> 

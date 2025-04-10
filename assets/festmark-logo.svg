@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="40" viewBox="0 0 150 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Letter F -->
+    <path d="M10 5 L40 5 L40 12 L20 12 L20 18 L35 18 L35 25 L20 25 L20 35 L10 35 Z" fill="#FF4500"/>
+    <!-- Decorative element -->
+    <circle cx="50" cy="20" r="5" fill="#1F2937"/>
+    <!-- Text -->
+    <text x="65" y="28" font-family="'Space Mono', monospace" font-size="24" font-weight="bold" fill="#1F2937">estmark</text>
+</svg> 
