@@ -3,94 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>festmark - Festive Branding for Your Business</title>
+    <title>festmark - Automated Festive Branding</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav-container">
             <div class="logo">
                 <img src="assets/festmark-logo.svg" alt="festmark Logo">
             </div>
-            <a href="#contact" class="btn btn-primary">Get Started - ₹1,500/year</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main>
-        <!-- Section 1 -->
+        <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <h1>festmark - Festive Branding for Your Business</h1>
-                <p class="tagline">Create stunning festive images in seconds. No design skills needed.</p>
-                <a href="#contact" class="cta-button">Get Started - ₹1,500/year</a>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="gradient-text">Transform Your Business's Festive Presence</h1>
+                    <p class="hero-subtitle">Create stunning festival-themed branding materials in seconds. Perfect for local businesses.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary btn-large">
+                            Start Free Trial
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <p class="pricing-note">Then ₹1,500/year</p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Businesses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Festival Templates</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-preview.svg" alt="Festival Branding Preview" class="floating">
+                </div>
             </div>
         </section>
 
-        <!-- Section 2 -->
-        <section class="trusted-by">
-            <h2>Trusted by Local Businesses</h2>
-            <div class="clients-grid">
-                <div class="client-card">
-                    <h3>Shree Sweets</h3>
-                    <p>Pune</p>
-                </div>
-                <div class="client-card">
-                    <h3>Maharani Sarees</h3>
-                    <p>Nashik</p>
-                </div>
-                <div class="client-card">
-                    <h3>Ravi Electronics</h3>
-                    <p>Mumbai</p>
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="section-container">
+                <h2 class="section-title">Why Choose festmark?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>One-Click Design</h3>
+                        <p>Generate professional designs instantly with your brand colors and logo</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <h3>Festival Calendar</h3>
+                        <p>Never miss important festivals with our automated reminder system</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Multi-Channel Sharing</h3>
+                        <p>Share directly to WhatsApp, Instagram, and Facebook Business</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Brand Consistency</h3>
+                        <p>Maintain your brand identity across all festival communications</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="contact-info">
-                <p>📞 +91 99999 99999</p>
-                <p>📧 support@festmark.com</p>
-            </div>
-
-            <form id="contact" class="contact-form">
-                <h3>Get Started Today</h3>
-                <div class="form-group">
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="business" name="business" placeholder="Name of Business" required>
-                </div>
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
         </section>
 
-        <!-- Section 3 -->
-        <section class="mission">
-            <blockquote>
-                "At festmark, we empower small businesses to shine online with effortless festive branding."
-            </blockquote>
-            <div class="founder">
-                <img src="assets/founder.svg" alt="CA Nishank Parmar" class="founder-image">
-                <p class="founder-name">CA Nishank Parmar</p>
-                <p class="founder-title">Co-founder, FestMark</p>
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <div class="section-container">
+                <h2 class="section-title">Trusted by Local Businesses</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"festmark has transformed how we connect with customers during festivals. The designs are beautiful!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/client1.svg" alt="Rajesh Sweets" class="author-image">
+                            <div class="author-info">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Shree Sweets, Pune</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The automated festival reminders and instant designs save us so much time. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/client2.svg" alt="Maharani Sarees" class="author-image">
+                            <div class="author-info">
+                                <h4>Priya Shah</h4>
+                                <p>Maharani Sarees, Nashik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="section-container">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Annual Plan</h3>
+                        <div class="price">
+                            <span class="amount">₹1,500</span>
+                            <span class="period">/year</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited festival designs</li>
+                        <li><i class="fas fa-check"></i> All social media formats</li>
+                        <li><i class="fas fa-check"></i> WhatsApp & email sharing</li>
+                        <li><i class="fas fa-check"></i> Festival calendar & reminders</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Get Started Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Ready to Transform Your Festival Marketing?</h2>
+                        <p>Join hundreds of businesses using festmark to create stunning festival communications.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 99999 99999</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>support@festmark.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <h3>Start Your Free Trial</h3>
+                        <div class="form-group">
+                            <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="business" name="business" placeholder="Business Name" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Start Free Trial
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-info">
-                <p>📍 Pune, India</p>
-                <p>📧 support@festmark.com</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/festmark-logo.svg" alt="festmark Logo" class="footer-logo">
+                    <p>Empowering businesses with beautiful festival branding</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="#privacy">Privacy</a>
+                        <a href="#terms">Terms</a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>© 2025 DukaanDazzle. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>© 2025 festmark. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
     </footer>
